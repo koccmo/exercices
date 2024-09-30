@@ -1,10 +1,10 @@
-name := "exercices"
+ThisBuild / version := "0.1.0-SNAPSHOT"
 
-version := "1.0"
+ThisBuild / scalaVersion := "2.13.13"
 
-scalaVersion := "2.13.10"
+lazy val root = (project in file("."))
+  .settings(
+    name := "exercices"
+  )
 
-libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.2.19" % Test,
-  "org.scalatestplus" %% "scalacheck-1-15" % "3.2.11.0" % Test,
-)
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.17" % "test"
