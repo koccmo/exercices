@@ -21,4 +21,7 @@ object Test extends App {
   println(cars2.sortBy(_.model))
   println(cars2.sortBy(_.model).reverse)
 
+  import cats.Functor
+
+  type Okk[A] = Either[String, A]
 }
